@@ -48,6 +48,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'devise_token_auth', git: "https://github.com/lynndylanhurley/devise_token_auth"
+
 gem "rack-cors", "~> 1.1"
 
 gem "wannabe_bool", "~> 0.7.1"
