@@ -39,6 +39,8 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  gem "byebug"
 end
 
 group :development do
@@ -46,3 +48,12 @@ group :development do
   # gem "spring"
 end
 
+gem "rack-cors", "~> 1.1"
+
+gem "wannabe_bool", "~> 0.7.1"
+
+gem "active_hash", "~> 3.1"
+
+gem "whenever", "~> 1.0"
+
+gem "dotenv-rails", "~> 2.7"
