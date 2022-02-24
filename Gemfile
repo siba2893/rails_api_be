@@ -46,6 +46,10 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  gem "letter_opener", "~> 1.7"
+
+  gem "rubocop", "~> 1.25"
 end
 
 gem 'devise_token_auth', git: "https://github.com/lynndylanhurley/devise_token_auth"
