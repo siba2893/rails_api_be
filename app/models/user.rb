@@ -13,4 +13,21 @@ class User < ActiveRecord::Base
          :validatable
 
   include DeviseTokenAuth::Concerns::User
+
+  ATTRIBUTES = [
+    :id,
+    :first_name,
+    :last_name,
+    :email,
+    :company_id
+  ].freeze
+
+  RESPONSE = {
+    only: ATTRIBUTES,
+    include: [],
+  }.freeze
+
+  def name
+    "#{first_name.capitalize} #{last_name.capitalize}"
+  end
 end
