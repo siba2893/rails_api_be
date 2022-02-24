@@ -18,7 +18,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'LynxPay <notificaciones@lynx-pay.com>'
+  config.mailer_sender = 'Event Planner <notificaciones@eventplanner.com>'
   # config.parent_mailer = 'CustomerNotificationsMailer'
 
   # Configure the class responsible to send e-mails.
