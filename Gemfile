@@ -63,3 +63,11 @@ gem "active_hash", "~> 3.1"
 gem "whenever", "~> 1.0"
 
 gem "dotenv-rails", "~> 2.7"
+
+gem "sass-rails", "~> 6.0"
+
+gem "trestle", "~> 0.9.5"
+
+gem "trestle-auth", "~> 0.4.3"
+
+gem "trestle-search", "~> 0.4.3"

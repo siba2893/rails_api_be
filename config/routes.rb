@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  root 'api#hello'
+
+  get :private, to: 'api#private'
 
   namespace :api do
     scope :v1 do
