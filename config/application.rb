@@ -42,6 +42,18 @@ module EventPlannerBe
     # config.middleware.use ActionDispatch::Cookies
     # config.middleware.use ActionDispatch::Session::CookieStore
     # config.middleware.use Rack::MethodOverride
-    # config.middleware.use ActionDispatch::Flash
+    # config.middleware.use ActionDispatch::
+
+    config.i18n.default_locale = :es
+    config.i18n.fallbacks = [:en]
+
+    # to skip assets, scaffolds.css, test framework, helpers, view
+    config.generators do |g|
+      g.template_engine nil # to skip views
+      g.test_framework nil # to skip test framework
+      g.assets false
+      g.helper false
+      g.stylesheets false
+    end
   end
 end
