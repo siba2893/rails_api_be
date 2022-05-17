@@ -1,4 +1,6 @@
 class Users::SessionsController < DeviseTokenAuth::SessionsController
+  protect_from_forgery with: :null_session
+  
   wrap_parameters format: []
 
   def render_create_success
